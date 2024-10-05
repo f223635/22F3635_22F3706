@@ -6,6 +6,10 @@ public class Library {
 
 	// Add Books in the List
 	public void addBook(String bookName) {
+		if (bookName.isEmpty() || bookName.isBlank() || bookName == null) {
+			System.out.println("Invalid name");
+			return;
+		}
 		books.add(bookName);
 		System.out.println(bookName + " added to library.");
 	}
