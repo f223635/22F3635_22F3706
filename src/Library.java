@@ -14,5 +14,10 @@ private List<String> books = new ArrayList();
 	public void listBooks() {
 		System.out.println("Books in library: " + books);
 	} 
+
+	// Search Book from List of Books
+	public boolean searchBook(String bookName) {
+		return books.contains(bookName);
+	}
 }
 
